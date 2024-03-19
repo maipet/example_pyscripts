@@ -79,4 +79,4 @@ for key, value in destatis_dict.items():
                     g.add((URIRef('n%s' % fach_notation), skos['inScheme'], (URIRef('scheme'))))
                     g.add((URIRef('n%s' % fach_notation), skos['broader'], (URIRef('n%s' % k))))
 
-g.serialize('output.ttl', format='turtle')
+g.serialize('faechersystematik.ttl', format='turtle')
